@@ -1,0 +1,250 @@
+/* --- CSS Reset ---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+/* --- Universal Styles ---*/
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  color: grey;
+  letter-spacing: 1.7px;
+}
+
+li {
+  margin: 0px 0 2px 70px;
+}
+
+ul {
+  margin: 50px 0 40px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+
+
+body {
+  font-family: 'News Cycle', sans-serif;
+  color: grey;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem
+}
+
+.text-margin {
+  margin-bottom: 30px;
+}
+
+/*This is Dan's awesome hamburger menu*/
+
+.burger-button {
+  position:absolute;
+  top: 5vh;
+  left: 5vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can change the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid #2c3e50;
+  display: block;
+  border-radius: 22px;
+  transition: 1s;
+}
+.burger-button.active span{
+  border: 2px solid #ffffff;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(270deg);
+  border-color: rgba(210, 149, 86, 0.34);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  border-color: rgba(210, 149, 86, 0.34);
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  color: darkgrey;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+
+.hambuger-margin {
+  margin: 50px 70px 0 20px;
+}
+
+/* --- Navigation ---*/
+
+.nav-margin {
+  padding: 60px 0;
+}
+
+.title-margin {
+  width: 45%;
+  margin: 60px 50% 30px;
+}
+
+/* --- Portfolio ---*/
+
+.portfolio-one {
+  background-image: url('../images/te0186.jpg');
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.portfolio-one:hover {
+  background-image: url('../images/tinyearthling.png');
+}
+
+.portfolio-two {
+  background-image: url('../images/travelgirl.jpg');
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.portfolio-two:hover {
+  background-image: url('../images/blogger.png');
+}
+
+.no-letter-space {
+  letter-spacing: 0.2px;
+}
+
+/*--- Skills ---*/
+
+.skills {
+  width: 45%;
+  margin: 30px 50% 60px;
+
+}
+
+.name h1 {
+  color: rgba(210, 149, 86, 0.34);
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 100px;
+}
+
+.padding-copyright {
+  padding-left: 20px;
+}
+
+/* -- Media Query ---*/
+
+[class*=grid]>:not([class*=_md-0]).mob-show {
+  display: none;
+}
+
+@media (max-width: 32em){
+  .mob-hide {
+    display: none;
+  }
+
+  [class*=grid]>:not([class*=_md-0]).mob-show {
+    display: inline-block;
+  }
+
+  .title-margin {
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .skills {
+    width: 90%;
+    margin-left: 30px;
+
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .mob-hide {
+    display: none;
+  }
+
+  .skills {
+    width: 90%;
+    margin: 30px;
+  }
+
+  .title-margin {
+    width: 60%;
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+
+}
