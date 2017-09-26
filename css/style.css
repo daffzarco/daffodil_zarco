@@ -49,8 +49,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-
-
 body {
   font-family: 'News Cycle', sans-serif;
   color: grey;
@@ -176,6 +174,16 @@ body {
 
 .portfolio-two:hover {
   background-image: url('../images/blogger.png');
+}
+
+.portfolio-three {
+  background-image: url('../images/meldesigns.png');
+  background-size: cover;
+  min-height: 60vh;
+}
+
+.portfolio-three:hover {
+  background-image: url('../images/melsue.png');
 }
 
 .no-letter-space {
