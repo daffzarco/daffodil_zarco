@@ -45,7 +45,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 body {
@@ -59,9 +59,6 @@ body {
   margin-bottom: 10px;
 }
 
-.footer-text {
-
-}
 /*This is Dan's awesome hamburger menu*/
 
 .burger-button {
@@ -195,9 +192,7 @@ body {
 /*--- Skills ---*/
 
 .skills {
-  width: 45%;
-  margin: 30px 50% 60px;
-
+  margin: 90px 20px;
 }
 
 .name h1 {
@@ -209,6 +204,14 @@ body {
 
 .padding-copyright {
   padding-left: 20px;
+}
+
+.skills-width {
+  width: 95%;
+}
+
+.footer-margin {
+  margin-top: 60px;
 }
 
 /* -- Media Query ---*/
